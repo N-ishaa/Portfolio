@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/LOGO.jpeg" type="images/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" id="header">
+                <a href="#" onclick="reload()" class="portfolio-logo">
+                    <img src="images/Logo.png" class="My logo">
+                </a>
+            </div>
+            <!-- <div class="right"> -->
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <!-- </div> -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="mousefollower"></div>
+        <section class="first" id="home">
+            <div class="leftSection">Hi,My name is <span class="name">Nisha</span>
+                <div>and I'm a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="images/Nisha Resume.pdf" download><button class="btn-resume">Download Resume</button></a>
+                </div>
+            </div>
+            <div class="rightSection" id="image">
+                <!-- <img src="images/Dev.png" alt=""> -->
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/NishaThakur.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Hello, I’m Nisha, a dedicated second-year BCA student with a keen interest in web
+                                development, UI/UX design, and full-stack development.
+                                I am enthusiastic about learning and honing my skills to build innovative and
+                                user-friendly applications. I’m actively seeking opportunities to grow in these areas
+                                and connect with like-minded professionals.
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('Language Known')">Language Known</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>Frontend Development</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>I'm Fresher</span><br>I do not have professional experience yet, I have
+                                        actively worked on personal and academic projects.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Pursuing a Bachelor of Computer Applications(BCA)</span><br> from Guru
+                                        Gobind Singh Indraprastha University (GGSIPU) at Sri Guru Tegh Bahadur Institute
+                                        of Management and Information Technology (SGTBIMIT).
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Language Known">
+                                <ul>
+                                    <li>
+                                        <img class="img2" src="images/HTML-DESKTOP-MIART13.png" src="">Hypertext Markup
+                                        Language
+                                    </li>
+                                    <li>
+                                        <img class="img2" src="images/CSS.png" src="">Cascading Style Sheets
+                                    </li>
+                                    <li><img class="img2" src="images/JS.png" src="">JavaScript
+                                    </li>
+                                    <li> <img class="img2" src="images/Bootstrap.png" src="">Bootstrap
+                                    </li>
+                                    <li> <img class="img2" src="images/Tailwind CSS.png" src="">Tailwind CSS
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sevices -->
+        <section class="Services-Section">
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-desktop"></i>
+                            <h2>Web Design</h2>
+                            <p>I am passionate about creating clean and functional websites that provide an intuitive
+                                user experience. By focusing on simplicity and clarity, I aim to design sites that
+                                effectively communicate the intended message to the audience</p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <h2>Fully Responsive</h2>
+                            <p>I design websites that adapt seamlessly to various devices and screen sizes, ensuring a
+                                consistent and user-friendly experience across desktops, tablets, and smartphones. By
+                                employing responsive design techniques, I aim to enhance accessibility and engagement
+                                for all users.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio-section">
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Projects</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/Project-1.png" alt="">
+                            <div class="layer">
+                                <h3>E-Commerce Webite</h3>
+                                <p>This project name is E-Vogue it is a responsive e-commerce website for selling
+                                    clothing.</p>
+                                <a href="https://n-ishaa.github.io/E-Commerce/"><i
+                                        class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/Project-2.png" alt="">
+                            <div class="layer">
+                                <h3>University Website </h3>
+                                <p>Welcome to the University Website repository!It's designed for beginners to practice
+                                    and learn the basics of web
+                                    development. The website adapts to different screen sizes, making it easy to view on
+                                    both desktop and mobile devices. </p>
+                                <a href="https://n-ishaa.github.io/university-website/"><i
+                                        class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/Project-3.png" alt="">
+                            <div class="layer">
+                                <h3>Amazon-Clone</h3>
+                                <p>Welcome to the Amazon Clone! This project is a simple, fully responsive,
+                                    user-friendly amazon clone
+                                    designed using only HTML and CSS. </p>
+                                <a href="https://n-ishaa.github.io/Amazon-Clone/"><i
+                                        class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/N-ishaa" class="btn">See More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="Contact-Section">
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>nishathakur2006666@gmail.com</p>
+                            <p><i class="fa-sharp fa-solid fa-square-phone"></i>9821630750</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/nisha-5b9450287"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/N-ishaa"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://x.com/NishaThakurrrr"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div class="footer-text">
+                Copyright &#169; nishasportfolio.com | All rights reserved
+            </div>
+    </footer>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
